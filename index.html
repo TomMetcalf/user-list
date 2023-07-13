@@ -7,8 +7,108 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>User List</title>
   </head>
-  <body>
-    <h1>User List</h1>
+    <header class="container mt-5">
+        <div class="d-flex justify-content-end">
+          <div class="btn-group" role="group">
+            <button class="btn btn-secondary" data-bs-theme-value="dark">
+              Dark
+            </button>
+            <button
+              class="btn btn-light border-secondary-subtle"
+              data-bs-theme-value="light"
+            >
+              Light
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="mt-5">Users</h1>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <form>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Search Users"
+                  />
+                </div>
+              </form>
+            </div>
+            <div
+              class="col-md-8 user-menu d-flex justify-content-end align-items-center"
+            >
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Reputation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-bg-primary rounded-3"
+                    >New Users</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Editors</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Moderators</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+        <div class="card">
+          1
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card">
+          2
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card">
+          3
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card">
+          4
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card">
+          5
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card">
+          6
+        </div>
+        </div>
+      </div>
+      <nav aria-label="pagination">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a href="#" class="page-link">Previous</a>
+          </li>
+          <li class="page-item active"><a href="#" class="page-link">1</a></li>
+          <li class="page-item"><a href="#" class="page-link">2</a></li>
+          <li class="page-item"><a href="#" class="page-link">3</a></li>
+          <li class="page-item">
+            <a href="#" class="page-link" aria-label="next">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/darkmodetoggle.js"></script>
   </body>
 </html>
